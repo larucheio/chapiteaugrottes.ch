@@ -1,7 +1,7 @@
 import gulp from 'gulp'
 import browsersync from 'browser-sync'
 import sass from 'gulp-sass'
-const autoprefixer = require 'gulp-autoprefixer'
+import autoprefixer from 'gulp-autoprefixer'
 import sourcemaps from 'gulp-sourcemaps'
 import babel from 'gulp-babel'
 import uglify from 'gulp-uglify'
