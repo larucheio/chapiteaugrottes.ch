@@ -1,1 +1,7 @@
-# Chapiteau Grottes 2016 website
+# Chapiteau Grottes
+
+## local
+```bash
+npm install
+npm start
+```
