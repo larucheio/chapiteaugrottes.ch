@@ -1,6 +1,7 @@
 import gulp from 'gulp'
 import browsersync from 'browser-sync'
 import sass from 'gulp-sass'
+import autoprefixer from 'gulp-autoprefixer'
 import sourcemaps from 'gulp-sourcemaps'
 import babel from 'gulp-babel'
 import uglify from 'gulp-uglify'
@@ -22,6 +23,10 @@ gulp.task('serve', ['sass', 'js'], () => {
 
 gulp.task('sass', () =>
   gulp.src('app/scss/*.scss')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false,
+    }))
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(sourcemaps.write())
