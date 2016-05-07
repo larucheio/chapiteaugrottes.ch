@@ -23,6 +23,7 @@
   "homepage": "https://github.com/rspt/chapiteaugrottes.ch#readme",
   "devDependencies": {
     "browser-sync": "^2.12.5",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
   }
 }
