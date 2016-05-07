@@ -1,3 +1,5 @@
+$blue: #3f64af;
+
 @font-face {
   font-family: "Realtime Rounded";
   src: local("Realtime Rounded"),
@@ -7,7 +9,7 @@
 }
 
 :focus {
-  outline-color: #3f64af;
+  outline-color: $blue;
   outline-width: 2px;
 }
 
@@ -64,6 +66,6 @@ footer {
   width: 150px;
   height: 150px;
   z-index: -1;
-  background-color: #3f64af;
+  background-color: $blue;
   opacity: 0.5;
 }
