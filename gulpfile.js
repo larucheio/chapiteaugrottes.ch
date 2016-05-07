@@ -6,18 +6,18 @@ var sass = require('gulp-sass')
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "./build"
         }
     })
 
-    gulp.watch("scss/*.scss", ['sass']);
-    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("app/scss/*.scss", ['sass']);
+    gulp.watch("build/*.html").on('change', browserSync.reload);
 })
 
 gulp.task('sass', function() {
-    return gulp.src("scss/*.scss")
+    return gulp.src("app/scss/*.scss")
         .pipe(sass())
-        .pipe(gulp.dest("css"))
+        .pipe(gulp.dest("build/css"))
         .pipe(browserSync.stream())
 })
 
