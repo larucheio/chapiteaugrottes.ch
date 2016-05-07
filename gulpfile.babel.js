@@ -3,6 +3,7 @@ import browsersync from 'browser-sync'
 import sass from 'gulp-sass'
 import sourcemaps from 'gulp-sourcemaps'
 import babel from 'gulp-babel'
+import uglify from 'gulp-uglify'
 
 const browserSync = browsersync.create()
 
@@ -32,6 +33,7 @@ gulp.task('js', () =>
   gulp.src('app/js/app.js')
     .pipe(sourcemaps.init())
 		.pipe(babel())
+    .pipe(uglify())
     .pipe(sourcemaps.write())
 		.pipe(gulp.dest('build/js'))
 )
