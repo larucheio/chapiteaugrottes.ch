@@ -27,14 +27,15 @@ body {
 
 a {
   text-decoration: none;
-  background-color: rgba($blue, 0.15);
-  color: inherit;
+  color: $blue;
   padding: 2px;
+  transition: all 0.35s ease;
 }
 
 a:hover,
 a:focus {
-  background-color: rgba($blue, 0.5);
+  color: darken($blue, 25%);
+  text-decoration: line-through;
   transition: all 0.35s ease;
 }
 
