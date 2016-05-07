@@ -30,7 +30,9 @@ gulp.task('sass', () =>
 
 gulp.task('js', () =>
   gulp.src('app/js/app.js')
+    .pipe(sourcemaps.init())
 		.pipe(babel())
+    .pipe(sourcemaps.write())
 		.pipe(gulp.dest('build/js'))
 )
 
