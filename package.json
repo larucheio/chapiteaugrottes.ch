@@ -1,0 +1,22 @@
+{
+  "name": "chapiteau-grottes",
+  "version": "1.0.0",
+  "description": "Website for Chapiteau Grottes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rspt/chapiteaugrottes.ch.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "rspt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rspt/chapiteaugrottes.ch/issues"
+  },
+  "homepage": "https://github.com/rspt/chapiteaugrottes.ch#readme"
+}
