@@ -1,2 +1,2 @@
-fonts
-build/css
+build/*
+!build/index.html
