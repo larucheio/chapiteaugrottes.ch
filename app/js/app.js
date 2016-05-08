@@ -1,3 +1,2 @@
-const x = 'Hi'
-
-console.log(x)
+const body = document.body
+body.innerHTML += '<div class="circle"></div>'
