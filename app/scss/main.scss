@@ -71,14 +71,9 @@ footer {
   margin: 50px 16px 16px 16px;
 }
 
-.circle {
+canvas {
   position: fixed;
-  top: 350px;
-  right: 45px;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  top: 0;
+  left: 0;
   z-index: -1;
-  background-color: $blue;
-  opacity: 0.5;
 }
